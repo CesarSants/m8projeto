@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>agenda de contatos</h1>
+            <br/>
+            <h2>digite o telefone e o nome do contato</h2>
+        </header>
+        <form id="my-form">
+            <label for="celular">Digite o celular que deseja salvar:</label> 
+            <br/>
+            <input id="celular" type="tel" maxlength="11" minlength="11" placeholder="DDD + celular" required/>
+            <br/>
+            <label for="nome">Digite o nome do contato:</label> 
+            <br/>
+            <input id="nome" type="text"  placeholder="nome" required/>
+            <br/>
+            <button type="submit">
+                salvar
+            </button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        numero do contato
+                    </th>
+                    <th>
+                        nome do contato
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="tel">
+                        ---
+                    </td>
+                    <td id="contato">
+                        ---
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <script src="./main.js"></script>
+</body>
+</html>
